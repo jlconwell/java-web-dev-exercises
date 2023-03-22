@@ -18,7 +18,7 @@ public class Counting_Characters {
 
         Path filename = Path.of("C:\\Users\\jakel\\JakeConwell\\Desktop\\LC101\\studio text file.txt");
 //        String quote = input.nextLine();
-        String quote = Files.readString(filename);
+        String quote = (Files.readString(filename)).toLowerCase();
 
         char[] quoteCharArray = quote.toCharArray();
         HashMap<Character, Integer> charCount = new HashMap<>();
