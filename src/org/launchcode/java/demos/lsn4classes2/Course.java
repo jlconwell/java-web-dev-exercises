@@ -45,15 +45,15 @@ public class Course {
     //  Course objects equal.
 
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Course course)) return false;
-        return Objects.equals(topic, course.topic) && Objects.equals(instructor, course.instructor) && Objects.equals(enrolledStudents, course.enrolledStudents);
-    }
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (!(o instanceof Course course)) return false;
+//        return Objects.equals(topic, course.topic) && Objects.equals(instructor, course.instructor) && Objects.equals(enrolledStudents, course.enrolledStudents);
+//    }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(topic, instructor, enrolledStudents);
-    }
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(topic, instructor, enrolledStudents);
+//    }
 }

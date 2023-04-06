@@ -67,17 +67,17 @@ public class Student {
     //  Student objects equal.
 
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Student student)) return false;
-        return studentId == student.studentId;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(studentId);
-    }
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (!(o instanceof Student student)) return false;
+//        return studentId == student.studentId;
+//    }
+//
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(studentId);
+//    }
 
     public String getName() {
         return name;
