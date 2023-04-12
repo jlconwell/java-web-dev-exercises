@@ -6,14 +6,23 @@ public class Program {
 
     public static void main(String[] args) {
 
-        Computer dell = new Computer("HP", "Hoopty", "January 1, 1939", "Desktop");
-
-        System.out.println(dell.toString());
-
-        Laptop hpVictus = new Laptop("HP", "Victus", "Laptop", "Janaury 1, 1939", "Gaming");
+        Laptop hpVictus = new Laptop("Victus", "3080ti", 8, true, true);
 
         System.out.println(hpVictus.toString());
 
-//
+        hpVictus.changeNumPadToFalse();
+
+        System.out.println(hpVictus.toString());
+
+        SmartPhone googlePixel7 = new SmartPhone("Google Pixel 7", "Unknown", 8, false, 6.3);
+
+        System.out.println(googlePixel7.toString());
+
+        hpVictus.addRam(16);
+        System.out.println(hpVictus.toString());
+
+
     }
+
+
 }

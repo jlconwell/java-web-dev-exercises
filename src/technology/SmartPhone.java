@@ -1,17 +1,26 @@
 package technology;
 
 public class SmartPhone extends Computer {
-    private String typeOfService;
 
+    private double screenSize;
+    public SmartPhone(String name, String GPU, int ram, boolean isWindows, double screenSize) {
+        super(name, GPU, ram, isWindows);
+        this.screenSize = screenSize;
+    }
 
-    public SmartPhone(String brandName, String companyFoundedDate, String deviceType, String productName, String typeOfService) {
-        super(brandName, companyFoundedDate, deviceType, productName);
-        this.typeOfService = typeOfService;
+    public void changeScreenSize(double newSize) {
+        screenSize = newSize;
     }
 
     @Override
     public String toString() {
-        return super.toString() + "\nType of Cell Service: " + this.typeOfService;
+        return "SmartPhone{" +
+                "screenSize=" + screenSize +
+                ", name='" + name + '\'' +
+                ", GPU='" + GPU + '\'' +
+                ", ram=" + ram +
+                ", isWindows=" + isWindows +
+                '}';
     }
 }
 
